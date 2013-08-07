@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BrightAuthor version="5" BrightAuthorVersion="3.7.0.20" type="publish">
+  <meta>
+    <name>heartbeat-demo</name>
+    <model>HD120</model>
+    <videoMode>720x480x60p</videoMode>
+    <monitorOrientation>Landscape</monitorOrientation>
+    <videoConnector>HDMI</videoConnector>
+    <deviceWebPageDisplay>Standard</deviceWebPageDisplay>
+    <backgroundScreenColor a="255" r="0" g="0" b="0" />
+    <monitorOverscan>overscanTitleSafe</monitorOverscan>
+    <gpio0>input</gpio0>
+    <gpio1>input</gpio1>
+    <gpio2>input</gpio2>
+    <gpio3>input</gpio3>
+    <gpio4>input</gpio4>
+    <gpio5>input</gpio5>
+    <gpio6>input</gpio6>
+    <gpio7>input</gpio7>
+    <BP900AConfigureAutomatically>True</BP900AConfigureAutomatically>
+    <BP900BConfigureAutomatically>True</BP900BConfigureAutomatically>
+    <BP900CConfigureAutomatically>True</BP900CConfigureAutomatically>
+    <BP200AConfigureAutomatically>True</BP200AConfigureAutomatically>
+    <BP200BConfigureAutomatically>True</BP200BConfigureAutomatically>
+    <BP200CConfigureAutomatically>True</BP200CConfigureAutomatically>
+    <BP900AConfiguration>0</BP900AConfiguration>
+    <BP900BConfiguration>0</BP900BConfiguration>
+    <BP900CConfiguration>0</BP900CConfiguration>
+    <BP200AConfiguration>0</BP200AConfiguration>
+    <BP200BConfiguration>0</BP200BConfiguration>
+    <BP200CConfiguration>0</BP200CConfiguration>
+    <SerialPortConfiguration>
+      <port>0</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>1</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>2</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>3</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>4</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <SerialPortConfiguration>
+      <port>5</port>
+      <baudRate>115200</baudRate>
+      <dataBits>8</dataBits>
+      <parity>N</parity>
+      <stopBits>1</stopBits>
+      <protocol>ASCII</protocol>
+      <sendEol>CR</sendEol>
+      <receiveEol>CR</receiveEol>
+      <invertSignals>False</invertSignals>
+      <connectedDevice>None</connectedDevice>
+    </SerialPortConfiguration>
+    <udpDestinationAddressType>IPAddress</udpDestinationAddressType>
+    <udpDestinationAddress>255.255.255.255</udpDestinationAddress>
+    <udpDestinationPort>5000</udpDestinationPort>
+    <udpReceiverPort>5000</udpReceiverPort>
+    <flipCoordinates>false</flipCoordinates>
+    <touchCursorDisplayMode>auto</touchCursorDisplayMode>
+    <language>English</language>
+    <languageKey>eng</languageKey>
+    <audio1MinVolume>0</audio1MinVolume>
+    <audio1MaxVolume>100</audio1MaxVolume>
+    <audio2MinVolume>0</audio2MinVolume>
+    <audio2MaxVolume>100</audio2MaxVolume>
+    <audio3MinVolume>0</audio3MinVolume>
+    <audio3MaxVolume>100</audio3MaxVolume>
+    <usbMinVolume>0</usbMinVolume>
+    <usbMaxVolume>100</usbMaxVolume>
+    <hdmiMinVolume>0</hdmiMinVolume>
+    <hdmiMaxVolume>100</hdmiMaxVolume>
+    <inactivityTimeout>False</inactivityTimeout>
+    <inactivityTime>30</inactivityTime>
+    <autoCreateMediaCounterVariables>False</autoCreateMediaCounterVariables>
+    <networkedVariablesUpdateInterval>300</networkedVariablesUpdateInterval>
+    <userVariables>
+      <userVariable>
+        <name>heartbeat_url</name>
+        <defaultValue>heartbeat.herlein.com/heartbeat.php</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+      </userVariable>
+      <userVariable>
+        <name>heartbeat_tag</name>
+        <defaultValue>testing</defaultValue>
+        <networked>False</networked>
+        <liveDataFeedName />
+        <systemVariable />
+      </userVariable>
+    </userVariables>
+    <liveDataFeeds>
+    </liveDataFeeds>
+    <scriptPlugins>
+      <scriptPlugin>
+        <name>heartbeat</name>
+      </scriptPlugin>
+    </scriptPlugins>
+    <htmlSites>
+    </htmlSites>
+    <presentationIdentifiers>
+    </presentationIdentifiers>
+    <DirectoryLocations>
+      <AllFiles>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</AllFiles>
+      <Image>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</Image>
+      <Video>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</Video>
+      <Audio>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</Audio>
+      <Media>\\vmware-host\Shared Folders\Documents\src\brightsign\heartbeats</Media>
+      <Fonts>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</Fonts>
+      <HTML>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</HTML>
+      <PluginScriptsAutoruns>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</PluginScriptsAutoruns>
+      <CSV>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</CSV>
+      <RFChannelScan>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</RFChannelScan>
+      <Schedules>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</Schedules>
+      <ReplacementMedia>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</ReplacementMedia>
+      <UserVariables>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</UserVariables>
+      <XModemFiles>\\vmware-host\Shared Folders\Documents\brightsign\Presentations\Sonos\TargetDemo-7-31\Presentation</XModemFiles>
+    </DirectoryLocations>
+  </meta>
+  <zones>
+    <zone>
+      <name>Video or Images</name>
+      <x>24</x>
+      <y>12</y>
+      <width>671</width>
+      <height>456</height>
+      <type>VideoOrImages</type>
+      <id>1</id>
+      <zoneSpecificParameters>
+        <viewMode>Letterboxed and Centered</viewMode>
+        <audioOutput>Analog Audio</audioOutput>
+        <audioMode>Multichannel Surround</audioMode>
+        <audioMapping>Audio-1</audioMapping>
+        <analogOutput>PCM</analogOutput>
+        <analog2Output>None</analog2Output>
+        <analog3Output>None</analog3Output>
+        <hdmiOutput>None</hdmiOutput>
+        <spdifOutput>None</spdifOutput>
+        <usbOutput>None</usbOutput>
+        <audioMixMode>Stereo</audioMixMode>
+        <videoVolume>100</videoVolume>
+        <audioVolume>100</audioVolume>
+        <liveVideoInput>S-Video</liveVideoInput>
+        <liveVideoStandard>NTSC-M</liveVideoStandard>
+        <brightness>128</brightness>
+        <contrast>64</contrast>
+        <saturation>64</saturation>
+        <hue>0</hue>
+        <zOrderFront>True</zOrderFront>
+        <imageMode>Scale to Fit</imageMode>
+      </zoneSpecificParameters>
+      <playlist>
+        <name>Playlist 0</name>
+        <type>interactive</type>
+        <states>
+          <initialState>Event Handler</initialState>
+          <state>
+            <name>Event Handler</name>
+            <eventHandler2Item>
+              <stopPlayback>False</stopPlayback>
+            </eventHandler2Item>
+          </state>
+          <state>
+            <name>Event Handler 1</name>
+            <eventHandler2Item>
+              <stopPlayback>False</stopPlayback>
+            </eventHandler2Item>
+          </state>
+          <transition>
+            <sourceMediaState>Event Handler</sourceMediaState>
+            <userEvent>
+              <name>timeout</name>
+              <parameters>
+                <parameter>6</parameter>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Event Handler 1</targetMediaState>
+            <brightSignCmd>
+              <name>SendPluginMessage</name>
+              <customUI>True</customUI>
+              <command>
+                <name>sendPluginMessage</name>
+                <parameter>
+                  <name>pluginName</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>heartbeat</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+                <parameter>
+                  <name>message</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>heartbeat!testing</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+          </transition>
+        </states>
+      </playlist>
+    </zone>
+  </zones>
+</BrightAuthor>

@@ -7,6 +7,8 @@ CREATE TABLE heartbeats (
   ext_ip   varchar(255) NOT NULL,
   version  varchar(255) NOT NULL,
   fw       varchar(255) NOT NULL,
+  tag      varchar(255) NOT NULL,
+  event    varchar(255) NOT NULL,
   ts       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY  (snum)
 ) ENGINE=InnoDB;

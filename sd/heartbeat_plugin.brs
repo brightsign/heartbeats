@@ -49,7 +49,6 @@ Function heartbeat_process_event(evt as Object) as boolean
 	if type(event) = "roDatagramEvent" then
 	    msg$ = event
 	    retval = heartbeat(msg, m)
-	end if
 	return retval
 end Function
 
