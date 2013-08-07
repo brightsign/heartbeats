@@ -262,7 +262,7 @@
                   <uiElementName />
                   <parameterValue>
                     <parameterValueItemText>
-                      <value>heartbeat!timer</value>
+                      <value>timeout</value>
                     </parameterValueItemText>
                   </parameterValue>
                   <itemName />
@@ -304,7 +304,7 @@
                   <uiElementName />
                   <parameterValue>
                     <parameterValueItemText>
-                      <value>heartbeat!timer</value>
+                      <value>timeout</value>
                     </parameterValueItemText>
                   </parameterValue>
                   <itemName />

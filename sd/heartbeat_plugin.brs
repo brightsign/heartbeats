@@ -27,7 +27,7 @@ End Function
 
 
 
-Function heartbeat_process_event(evt as Object) as boolean
+Function heartbeat_process_event(event as Object) as boolean
 	retval = false
 
     if m.ip=""
@@ -35,12 +35,11 @@ Function heartbeat_process_event(evt as Object) as boolean
           return false
     end if
 
-    print evt
- 	
 	if type(event) = "roAssociativeArray" then
         if type(event["EventType"]) = "roString"
              if (event["EventType"] = "SEND_PLUGIN_MESSAGE") then
                 if event["PluginName"] = "heartbeat" then
+                    print "event heartbeat"
                     pluginMessage$ = event["PluginMessage"]
                     retval = heartbeat(pluginMessage$, m)
                 endif
@@ -58,21 +57,10 @@ end Function
 
 
 Function heartbeat(msg as string, h as Object) as Object
-	r = CreateObject("roRegex", "!", "i")
-	fields=r.split(msg)
-	numFields = fields.count()
-	heartbeat=""
-	event=""
-	tag="default"
-	retval=false
 
-	if (numFields < 2) or (numFields > 2) then
-			print "Incorrect number of fields for heartbeat command:";msg
-			return retval
-	else if (numFields = 2) then
-			heartbeat=fields[1]
-			event=fields[2]
-	end if
+	print "heartbeat: ";msg
+	retval=false
+	tag=""
 
 	if h.userVariables["heartbeat_url"]<>invalid
 	    heartbeat_url=h.userVariables["heartbeat_url"].currentValue$
@@ -84,14 +72,15 @@ Function heartbeat(msg as string, h as Object) as Object
 	    tag=h.userVariables["heartbeat_tag"].currentValue$
     end if
 
-	if (left(heartbeat,9) = "heartbeat") then
-	    if heartbeat_url<>""
-			xfer = CreateObject("roUrlTransfer") 
-			urlstring=heartbeat_url+"&serial="+h.snum+"&fw="+h.fw+"&intip="+h.ip+"&event="+event+"&tag="+tag
-			print urlstring
-			xfer.SetURL(urlstring)
-			xfer.GetFromString() 
-		endif
-	end if
+    if heartbeat_url<>""
+		xfer = CreateObject("roUrlTransfer") 
+		urlstring=heartbeat_url+"&serial="+h.snum+"&fw="+h.fw+"&intip="+h.ip+"&event="+event+"&tag="+tag
+		print urlstring
+		xfer.SetURL(urlstring)
+		xfer.GetFromString() 
+	else
+	    print "cannot do heartbeat since no heartbeat_url user variable is defined"
+	endif
+
 	return retval
 end Function
