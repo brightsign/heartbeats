@@ -27,7 +27,7 @@ End Function
 
 
 
-Function heartbeat_process_event(evt as Object) as boolean
+Function heartbeat_process_event(event as Object) as boolean
 	retval = false
 
     if m.ip=""
@@ -35,9 +35,7 @@ Function heartbeat_process_event(evt as Object) as boolean
           return false
     end if
 
-    print evt
- 	
-	if type(evt) = "roAssociativeArray" then
+	if type(event) = "roAssociativeArray" then
         if type(event["EventType"]) = "roString"
              if (event["EventType"] = "SEND_PLUGIN_MESSAGE") then
                 if event["PluginName"] = "heartbeat" then
