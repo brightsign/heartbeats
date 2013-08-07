@@ -77,7 +77,7 @@ Function heartbeat(msg as string, h as Object) as Object
 		urlstring=heartbeat_url+"?serial="+h.snum+"&fw="+h.fw+"&intip="+h.ip+"&event="+msg+"&tag="+tag
 		print urlstring
 		xfer.SetURL(urlstring)
-		xfer.GetFromString() 
+		xfer.PostFromString("test") 
 	else
 	    print "cannot do heartbeat since no heartbeat_url user variable is defined"
 	endif
