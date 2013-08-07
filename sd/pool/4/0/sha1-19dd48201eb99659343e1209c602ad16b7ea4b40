@@ -34,6 +34,8 @@ Function heartbeat_process_event(evt as Object) as boolean
           print "no local IP address - heartbeat disabled"
           return false
     end if
+
+    print evt
  	
 	if type(event) = "roAssociativeArray" then
         if type(event["EventType"]) = "roString"
@@ -49,6 +51,7 @@ Function heartbeat_process_event(evt as Object) as boolean
 	if type(event) = "roDatagramEvent" then
 	    msg$ = event
 	    retval = heartbeat(msg, m)
+	end if
 	return retval
 end Function
 
@@ -85,6 +88,7 @@ Function heartbeat(msg as string, h as Object) as Object
 	    if heartbeat_url<>""
 			xfer = CreateObject("roUrlTransfer") 
 			urlstring=heartbeat_url+"&serial="+h.snum+"&fw="+h.fw+"&intip="+h.ip+"&event="+event+"&tag="+tag
+			print urlstring
 			xfer.SetURL(urlstring)
 			xfer.GetFromString() 
 		endif

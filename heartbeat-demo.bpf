@@ -221,8 +221,8 @@
           </state>
           <state>
             <name>Event Handler 1</name>
-            <x>40</x>
-            <y>199</y>
+            <x>43</x>
+            <y>189</y>
             <width>116</width>
             <height>99</height>
             <id>1</id>
@@ -262,7 +262,49 @@
                   <uiElementName />
                   <parameterValue>
                     <parameterValueItemText>
-                      <value>heartbeat!testing</value>
+                      <value>heartbeat!timer</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>Event Handler 1</sourceMediaState>
+            <userEvent>
+              <name>timeout</name>
+              <parameters>
+                <parameter>6</parameter>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Event Handler</targetMediaState>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <brightSignCmd>
+              <name>SendPluginMessage</name>
+              <customUI>True</customUI>
+              <command>
+                <name>sendPluginMessage</name>
+                <parameter>
+                  <name>pluginName</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>heartbeat</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+                <parameter>
+                  <name>message</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>heartbeat!timer</value>
                     </parameterValueItemText>
                   </parameterValue>
                   <itemName />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<BrightAuthor version="5" BrightAuthorVersion="3.7.0.20" type="publish">
+<BrightAuthor version="5" BrightAuthorVersion="3.7.0.20" type="project">
   <meta>
     <name>heartbeat-demo</name>
     <model>HD120</model>
@@ -144,6 +144,7 @@
     <scriptPlugins>
       <scriptPlugin>
         <name>heartbeat</name>
+        <path>\\vmware-host\Shared Folders\Documents\src\brightsign\heartbeats\heartbeat_plugin.brs</path>
       </scriptPlugin>
     </scriptPlugins>
     <htmlSites>
@@ -176,6 +177,9 @@
       <height>456</height>
       <type>VideoOrImages</type>
       <id>1</id>
+      <zoomValue>1</zoomValue>
+      <horizontalOffset>0</horizontalOffset>
+      <verticalOffset>0</verticalOffset>
       <zoneSpecificParameters>
         <viewMode>Letterboxed and Centered</viewMode>
         <audioOutput>Analog Audio</audioOutput>
@@ -206,12 +210,22 @@
           <initialState>Event Handler</initialState>
           <state>
             <name>Event Handler</name>
+            <x>41</x>
+            <y>9</y>
+            <width>116</width>
+            <height>99</height>
+            <id>0</id>
             <eventHandler2Item>
               <stopPlayback>False</stopPlayback>
             </eventHandler2Item>
           </state>
           <state>
             <name>Event Handler 1</name>
+            <x>43</x>
+            <y>189</y>
+            <width>116</width>
+            <height>99</height>
+            <id>1</id>
             <eventHandler2Item>
               <stopPlayback>False</stopPlayback>
             </eventHandler2Item>
@@ -225,6 +239,8 @@
               </parameters>
             </userEvent>
             <targetMediaState>Event Handler 1</targetMediaState>
+            <displayMode>displayConnectingLine</displayMode>
+            <labelLocation>bottom</labelLocation>
             <brightSignCmd>
               <name>SendPluginMessage</name>
               <customUI>True</customUI>
@@ -246,7 +262,49 @@
                   <uiElementName />
                   <parameterValue>
                     <parameterValueItemText>
-                      <value>heartbeat!testing</value>
+                      <value>heartbeat!timer</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+              </command>
+            </brightSignCmd>
+            <assignInputToUserVariable>False</assignInputToUserVariable>
+          </transition>
+          <transition>
+            <sourceMediaState>Event Handler 1</sourceMediaState>
+            <userEvent>
+              <name>timeout</name>
+              <parameters>
+                <parameter>6</parameter>
+              </parameters>
+            </userEvent>
+            <targetMediaState>Event Handler</targetMediaState>
+            <displayMode>displayLabel</displayMode>
+            <labelLocation>bottom</labelLocation>
+            <brightSignCmd>
+              <name>SendPluginMessage</name>
+              <customUI>True</customUI>
+              <command>
+                <name>sendPluginMessage</name>
+                <parameter>
+                  <name>pluginName</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>heartbeat</value>
+                    </parameterValueItemText>
+                  </parameterValue>
+                  <itemName />
+                  <validationRule>-1</validationRule>
+                </parameter>
+                <parameter>
+                  <name>message</name>
+                  <uiElementName />
+                  <parameterValue>
+                    <parameterValueItemText>
+                      <value>heartbeat!timer</value>
                     </parameterValueItemText>
                   </parameterValue>
                   <itemName />

@@ -16,20 +16,20 @@
   <files>
     <download>
       <name>autoplay-heartbeat-demo.xml</name>
-      <hash method="SHA1">c6701926b6125ad287004f445ffa377de663dcf8</hash>
-      <size>10838</size>
-      <link>pool/f/8/sha1-c6701926b6125ad287004f445ffa377de663dcf8</link>
+      <hash method="SHA1">ca2e7d3f6a1684e0ac9e961f5c0358c340bd6431</hash>
+      <size>12403</size>
+      <link>pool/3/1/sha1-ca2e7d3f6a1684e0ac9e961f5c0358c340bd6431</link>
     </download>
     <download>
       <name>heartbeat-demo.bml</name>
-      <hash method="SHA1">f27d3928b5978aeaad06d337472e7c9064f406fd</hash>
-      <size>11449</size>
-      <link>pool/f/d/sha1-f27d3928b5978aeaad06d337472e7c9064f406fd</link>
+      <hash method="SHA1">89d9d5b800ce69bd523d0f0dd16db4dda6d26dad</hash>
+      <size>13118</size>
+      <link>pool/a/d/sha1-89d9d5b800ce69bd523d0f0dd16db4dda6d26dad</link>
     </download>
     <download>
       <name>heartbeat_plugin.brs</name>
       <hash method="SHA1">19dd48201eb99659343e1209c602ad16b7ea4b40</hash>
-      <size>2330</size>
+      <size>2372</size>
       <link>pool/4/0/sha1-19dd48201eb99659343e1209c602ad16b7ea4b40</link>
       <group>script</group>
     </download>

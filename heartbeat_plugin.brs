@@ -58,6 +58,8 @@ end Function
 
 
 Function heartbeat(msg as string, h as Object) as Object
+
+	print "heartbeat: ";msg
 	r = CreateObject("roRegex", "!", "i")
 	fields=r.split(msg)
 	numFields = fields.count()
