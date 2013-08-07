@@ -1,7 +1,7 @@
 NOW := $(shell date "+%Y%m%d%H%M%S")
 VERSION = 1-0
 HASH = $(shell git log --pretty=format:'%h' -n 1)
-PLAYER_IP = 192.168.70.100PLUGIN = heartbeat_plugin.brs
+PLAYER_IP = 192.168.70.100
 PLUGIN = heartbeat_plugin.brs
 
 install:
