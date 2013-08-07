@@ -10,7 +10,7 @@ Function heartbeat_Initialize(msgPort As Object, userVariables As Object, bsp as
 
     player = CreateObject("roDeviceInfo")
     h.snum=player.GetDeviceUniqueId()
-    h.version=player.GetVersion()
+    h.fw=player.GetVersion()
     h.ip=""
 
     net = CreateObject("roNetworkConfiguration", 0) 
@@ -58,7 +58,7 @@ end Function
 
 Function heartbeat(msg as string, h as Object) as Object
 
-	print "heartbeat: ";msg;"h: ";h
+	print "heartbeat: ";msg;
 	retval=false
 	tag=""
 
@@ -74,7 +74,7 @@ Function heartbeat(msg as string, h as Object) as Object
 
     if heartbeat_url<>""
 		xfer = CreateObject("roUrlTransfer") 
-		urlstring=heartbeat_url+"?serial="+h.snum+"&fw="+h.version+"&intip="+h.ip+"&event="+event+"&tag="+tag
+		urlstring=heartbeat_url+"?serial="+h.snum+"&fw="+h.fw+"&intip="+h.ip+"&event="+msg+"&tag="+tag
 		print urlstring
 		xfer.SetURL(urlstring)
 		xfer.GetFromString() 
