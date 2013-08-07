@@ -86,6 +86,7 @@ Function heartbeat(msg as string, h as Object) as Object
 	    if heartbeat_url<>""
 			xfer = CreateObject("roUrlTransfer") 
 			urlstring=heartbeat_url+"&serial="+h.snum+"&fw="+h.fw+"&intip="+h.ip+"&event="+event+"&tag="+tag
+			print urlstring
 			xfer.SetURL(urlstring)
 			xfer.GetFromString() 
 		endif
