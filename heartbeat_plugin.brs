@@ -41,6 +41,7 @@ Function heartbeat_process_event(evt as Object) as boolean
         if type(event["EventType"]) = "roString"
              if (event["EventType"] = "SEND_PLUGIN_MESSAGE") then
                 if event["PluginName"] = "heartbeat" then
+                    print "event heartbeat"
                     pluginMessage$ = event["PluginMessage"]
                     retval = heartbeat(pluginMessage$, m)
                 endif
