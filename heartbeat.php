@@ -8,7 +8,7 @@ $tag     = $_GET['tag'];
 $event   = $_GET['event'];
 $ext_ip  = $_SERVER['REMOTE_ADDR'];
 
-$link = mysql_connect('localhost', 'web', 'qwe123');
+$link = mysql_connect('localhost', 'REPLACE_USERNAME', 'REPLACE_PASSWORD');
 if (!$link) {
     die('Not connected : ' . mysql_error());
 }
