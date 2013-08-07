@@ -37,7 +37,7 @@ Function heartbeat_process_event(evt as Object) as boolean
 
     print evt
  	
-	if type(event) = "roAssociativeArray" then
+	if type(evt) = "roAssociativeArray" then
         if type(event["EventType"]) = "roString"
              if (event["EventType"] = "SEND_PLUGIN_MESSAGE") then
                 if event["PluginName"] = "heartbeat" then
