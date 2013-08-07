@@ -71,7 +71,7 @@ Function heartbeat(msg as string, h as Object) as Object
 			print "Incorrect number of fields for heartbeat command:";msg
 			return retval
 	else if (numFields = 2) then
-			heartbeat=fields[1]
+			name=fields[1]
 			event=fields[2]
 	end if
 
@@ -85,7 +85,7 @@ Function heartbeat(msg as string, h as Object) as Object
 	    tag=h.userVariables["heartbeat_tag"].currentValue$
     end if
 
-	if (left(heartbeat,9) = "heartbeat") then
+	if (left(name,9) = "heartbeat") then
 	    if heartbeat_url<>""
 			xfer = CreateObject("roUrlTransfer") 
 			urlstring=heartbeat_url+"&serial="+h.snum+"&fw="+h.fw+"&intip="+h.ip+"&event="+event+"&tag="+tag
