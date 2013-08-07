@@ -34,6 +34,8 @@ Function heartbeat_process_event(evt as Object) as boolean
           print "no local IP address - heartbeat disabled"
           return false
     end if
+
+    print evt
  	
 	if type(event) = "roAssociativeArray" then
         if type(event["EventType"]) = "roString"
